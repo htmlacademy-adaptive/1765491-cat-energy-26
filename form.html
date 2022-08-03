@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Cat energy</title>
+</head>
+<body class="page__body">
+  <header class="header">
+    <a class="logo">
+      <img class="logo__image" src="./image/logomobile.svg" width="33px" height="38px" alt="логотип ссылка на главную.">
+    </a>
+    <a class="text-logo">
+      <img class="text-logo__image" src="./image/textlogomobile.svg" width="101px" height="18px" alt="текстовый логотип ссылка на главную">
+    </a>
+    <nav class="navigation">
+      <button class="navigation__toggle"><span class="visyally-hidden">Открыть меню.</span></button>
+      <div class="navigation-wrapper">
+        <ul class="navigation__list">
+          <li class="list__item--current">
+            <a href="#">главная</a>
+          </li>
+          <li class="list__item">
+            <a href="#">каталог продукции</a>
+          </li>
+          <li class="list__item">
+            <a href="#">подбор программы</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="form">
+    <h1 class="form__title">Подбор программы</h1>
+    <p class="form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    <form class="form__filter" action="https://echo.htmlacademy.ru/" method="get">
+    <div class="filter__textplace">
+      <label class="filter__form-name" for="name">имя:*</label>
+      <input class="filter__name" type="text" placeholder="барсик" name="name">
+      <label class="filter__form-name" for="weight">вес (кг):*</label>
+      <input class="filter__name" type="text" placeholder="барсик" name="weight">
+      <label class="filter__form-name" for="age">возраст:</label>
+      <input class="filter__name" type="text" placeholder="барсик" name="age">
+    </div>
+    <div class="filter__radioform">
+      <input type="radio" name="weightloss">
+      <label for="weightloss">похудение</label>
+      <input type="radio" name="weightadd">
+      <label for="weightadd">набор массы</label>
+      <input type="radio" name="idk">
+      <label for="idk">не знаю (нужен ваш совет)</label>
+    </div>
+    <div class="contacts">
+      <h2 class="contacts__title">Контактные данные (владельца кота)</h2>
+      <label class="contacts__label" for="email">e-mail:*</label>
+      <input class="contacts__email" type="email" name="email">
+      <label class="contacts__label" for="phone">телефон:*</label>
+      <input class="contacts__phone" type="tel" name="phone">
+    </div>
+    <div class="comment">
+      <h2 class="comment__title">Комментарий</h2>
+      <input type="text" placeholder="расскажите обо всех повадках кота" name="comment">
+    </div>
+    <div class="add-form">
+      <input type="checkbox" name="fakesugar">
+      <label for="fakesugar">сахарозаменитель</label>
+      <input type="checkbox" name="water">
+      <label for="fakesugar">питьевая вода</label>
+      <input type="checkbox" name="milk">
+      <label for="fakesugar">молоко</label>
+      <input type="checkbox" name="vitamins">
+      <label for="fakesugar">витамины</label>
+    </div>
+    <input class="form__button button" type="submit" value="отправить заявку">
+    </form>
+  </main>
+  <footer class="footer">
+    <section class="footer__cooperation">
+      <p class="cooperation_title">приглашаем к сотрудничеству дилеров!</p>
+      <p class="cooperation__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    </section>
+    <img class="footer__map" src="./image/map.jpg" width="320px" height="362px">
+    <a class="text-logo">
+      <img class="text-logo__image" src="./image/textlogomobile.svg" width="101px" height="18px" alt="текстовый логотип ссылка на главную">
+    </a>
+    <ul class="social">
+      <li class="social__item"><a><img src="./image/vk.svg"></a></li>
+      <li class="social__item"><a><img src="./image/ut.svg"></a></li>
+      <li class="social__item"><a><img src="./image/tg.svg"></a></li>
+    </ul>
+    <ul class="copyright">
+      <li class="copyright__item">
+        <p class="copyright__text">HTML Academy</p>
+      </li>
+      <li class="copyright__item">
+        <a href="#"><img class="copyright__logo" src="./image/htmlacademy.svg" width="27px" height="34px"></a>
+      </li>
+    </ul>
+  </footer>
+</body>
+</html>
