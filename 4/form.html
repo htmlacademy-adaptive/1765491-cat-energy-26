@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Cat energy</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <base href="https://htmlacademy-adaptive.github.io/1765491-cat-energy-26/4/">
+</head>
+<body class="page__body">
+  <header class="header">
+    <a class="logo" href="index.html">
+      <img class="logo__image" src="./img/logomobile.svg" width="191px" height="38px" alt="логотип ссылка на главную.">
+    </a>
+    <nav class="navigation">
+      <button class="navigation__toggle"><span class="visyally-hidden">Открыть меню.</span></button>
+      <div class="navigation__wrapper">
+        <ul class="navigation__list list visyally-hidden">
+          <li class="list__item--current list__item">
+            <a href="#">главная</a>
+          </li>
+          <li class="list__item">
+            <a href="#">каталог продукции</a>
+          </li>
+          <li class="list__item">
+            <a href="#">подбор программы</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="form">
+    <h1 class="form__title">Подбор программы</h1>
+    <p class="form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    <form class="form__filter filter" action="https://echo.htmlacademy.ru/" method="get">
+    <div class="filter__textplace textplace">
+      <div class="textplace__wrapper">
+        <label class="filter__form-name" for="name">имя:*</label>
+        <input class="filter__name" type="text" placeholder="барсик" name="name">
+      </div>
+      <div class="textplace__wrapper">
+        <label class="filter__form-name" for="weight">вес (кг):*</label>
+        <input class="filter__name" type="text" placeholder="7" name="weight">
+      </div>
+      <div class="textplace__wrapper">
+        <label class="filter__form-name" for="age">возраст:</label>
+        <input class="filter__name" type="text" placeholder="7" name="age">
+      </div>
+    </div>
+    <div class="filter__radioform radioform">
+      <div class="radioform__wrapper">
+        <input type="radio" name="weightloss">
+        <label class="radiolabel" for="weightloss">похудение</label>
+      </div>
+      <div class="radioform__wrapper">
+        <input type="radio" name="weightadd">
+        <label class="radiolabel" for="weightadd">набор массы</label>
+      </div>
+      <div class="radioform__wrapper">
+        <input type="radio" name="idk">
+        <label class="radiolabel" for="idk">не знаю (нужен ваш совет)</label>
+      </div>
+    </div>
+    <div class="contacts">
+      <h2 class="contacts__title">Контактные данные (владельца кота)</h2>
+      <div class="contacts__wrapper">
+        <label class="contacts__label" for="email">e-mail:*</label>
+        <input class="contacts__email" type="email" name="email">
+      </div>
+      <div class="contacts__wrapper">
+        <label class="contacts__label" for="phone">телефон:*</label>
+        <input class="contacts__phone" type="tel" name="phone">
+      </div>
+    </div>
+    <div class="comment">
+      <h2 class="comment__title">Комментарий</h2>
+      <textarea class="comment__textarea" type="text" placeholder="расскажите обо всех повадках кота" name="comment" aria-label="поле ввода комментария о повадках кота"></textarea>
+    </div>
+    <div class="add-form">
+      <div class="add-form__wrapper">
+        <input type="checkbox" name="fakesugar" id="fakesugar">
+        <label class="add-form__label" for="fakesugar">сахарозаменитель</label>
+      </div>
+      <div class="add-form__wrapper">
+        <input type="checkbox" name="water" id="water">
+        <label class="add-form__label" for="water">питьевая вода</label>
+      </div>
+      <div class="add-form__wrapper">
+        <input type="checkbox" name="milk" id="milk">
+        <label class="add-form__label" for="milk">молоко</label>
+      </div>
+      <div class="add-form__wrapper">
+        <input type="checkbox" name="vitamins" id="vitamins">
+        <label class="add-form__label" for="vitamins">витамины</label>
+      </div>
+    </div>
+    <input class="form__button button" type="submit" value="отправить заявку">
+    </form>
+  </main>
+  <footer class="footer">
+    <section class="footer__cooperation cooperation">
+      <p class="cooperation__title">приглашаем к сотрудничеству дилеров!</p>
+      <p class="cooperation__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    </section>
+    <img class="footer__map" src="./img/map.jpg" width="320px" height="362px">
+    <a class="text-logo">
+      <img class="text-logo__image" src="./img/textlogomobile.svg" width="101px" height="18px" alt="текстовый логотип ссылка на главную">
+    </a>
+    <ul class="social">
+      <li class="social__item"><a href="https://vk.com/htmlacademy"><img src="./img/vk.svg"></a></li>
+      <li class="social__item"><a href="https://www.youtube.com/user/htmlacademyru"><img src="./img/ut.svg"></a></li>
+      <li class="social__item"><a href="tg://resolve?domain=htmlacademy"><img src="./img/tg.svg"></a></li>
+    </ul>
+    <ul class="copyright">
+      <li class="copyright__item">
+        <p class="copyright__text">HTML Academy</p>
+      </li>
+      <li class="copyright__item">
+        <a href="https://htmlacademy.ru/"><img class="copyright__logo" src="./img/htmlacademy.svg" width="27px" height="34px"></a>
+      </li>
+    </ul>
+  </footer>
+</body>
+</html>
