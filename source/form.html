@@ -7,13 +7,13 @@
 </head>
 <body class="page__body">
   <header class="header">
-    <a class="logo">
+    <a class="logo" href="index.html">
       <img class="logo__image" src="./img/logomobile.svg" width="191px" height="38px" alt="логотип ссылка на главную.">
     </a>
     <nav class="navigation">
       <button class="navigation__toggle"><span class="visyally-hidden">Открыть меню.</span></button>
       <div class="navigation__wrapper">
-        <ul class="navigation__list list">
+        <ul class="navigation__list list visyally-hidden">
           <li class="list__item--current list__item">
             <a href="#">главная</a>
           </li>
@@ -48,15 +48,15 @@
     <div class="filter__radioform radioform">
       <div class="radioform__wrapper">
         <input type="radio" name="weightloss">
-        <label for="weightloss">похудение</label>
+        <label class="radiolabel" for="weightloss">похудение</label>
       </div>
       <div class="radioform__wrapper">
         <input type="radio" name="weightadd">
-        <label for="weightadd">набор массы</label>
+        <label class="radiolabel" for="weightadd">набор массы</label>
       </div>
       <div class="radioform__wrapper">
         <input type="radio" name="idk">
-        <label for="idk">не знаю (нужен ваш совет)</label>
+        <label class="radiolabel" for="idk">не знаю (нужен ваш совет)</label>
       </div>
     </div>
     <div class="contacts">
@@ -72,24 +72,24 @@
     </div>
     <div class="comment">
       <h2 class="comment__title">Комментарий</h2>
-      <textarea type="text" placeholder="расскажите обо всех повадках кота" name="comment" aria-label="поле ввода комментария о повадках кота"></textarea>
+      <textarea class="comment__textarea" type="text" placeholder="расскажите обо всех повадках кота" name="comment" aria-label="поле ввода комментария о повадках кота"></textarea>
     </div>
     <div class="add-form">
       <div class="add-form__wrapper">
-        <input type="checkbox" name="fakesugar">
-        <label for="fakesugar">сахарозаменитель</label>
+        <input type="checkbox" name="fakesugar" id="fakesugar">
+        <label class="add-form__label" for="fakesugar">сахарозаменитель</label>
       </div>
       <div class="add-form__wrapper">
-        <input type="checkbox" name="water">
-        <label for="fakesugar">питьевая вода</label>
+        <input type="checkbox" name="water" id="water">
+        <label class="add-form__label" for="water">питьевая вода</label>
       </div>
       <div class="add-form__wrapper">
-        <input type="checkbox" name="milk">
-        <label for="fakesugar">молоко</label>
+        <input type="checkbox" name="milk" id="milk">
+        <label class="add-form__label" for="milk">молоко</label>
       </div>
       <div class="add-form__wrapper">
-        <input type="checkbox" name="vitamins">
-        <label for="fakesugar">витамины</label>
+        <input type="checkbox" name="vitamins" id="vitamins">
+        <label class="add-form__label" for="vitamins">витамины</label>
       </div>
     </div>
     <input class="form__button button" type="submit" value="отправить заявку">
