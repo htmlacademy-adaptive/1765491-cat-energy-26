@@ -2,13 +2,13 @@
   font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/oswaldregular.woff) format("woff"), url(../fonts/oswaldregular.woff2) format("woff2");
+  src: url(../fonts/oswaldregular.woff2) format("woff2"), url(../fonts/oswaldregular.woff) format("woff");
 }
 @font-face {
   font-family: "Oswald";
   font-style: bold;
   font-weight: 500;
-  src: url(../fonts/oswaldmedium.woff) format("woff"), url(../fonts/oswaldmedium.woff2) format("woff2");
+  src: url(../fonts/oswaldmedium.woff2) format("woff2"), url(../fonts/oswaldmedium.woff) format("woff");
 }
 html {
   width: 320px;
@@ -80,16 +80,17 @@ body {
   padding-bottom: 13px;
   text-decoration: none;
 }
-.direction-wrapper {
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
 .direction {
   background-color: #F2F2F2;
   padding-top: 20px;
   padding-left: 20px;
+  padding-right: 20px;
   padding-bottom: 20px;
+}
+.direction__wrapper {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .direction:first-of-type {
   margin-bottom: 20px;
@@ -160,22 +161,6 @@ body {
   font-weight: 400;
   margin: 0;
 }
-.weight__count,
-.day__count {
-  font-family: "Oswald";
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #444444;
-}
-.weight__description,
-.day__description {
-  font-family: "Arial";
-  font-size: 12px;
-  line-height: 12px;
-  font-weight: 400;
-  color: #444444;
-}
 .example__price {
   font-family: "Oswald";
   font-size: 14px;
@@ -219,6 +204,181 @@ body {
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+}
+.form__button {
+  border: none;
+  background-color: #68B738;
+  color: #ffffff;
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  width: 100%;
+}
+.catalog-main {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 35px;
+  padding-top: 27px;
+}
+.catalog-main__title {
+  font-family: "Oswald";
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  margin: 0;
+}
+.show-more__title {
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #111111;
+  text-transform: uppercase;
+  text-align: center;
+}
+.show-more__text {
+  font-family: "Arial";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: #444444;
+}
+.show-more__button {
+  text-transform: uppercase;
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  background-color: #F2F2F2;
+  display: block;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.moar-product__title {
+  font-family: "Oswald";
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.moar-product-item__name {
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #222222;
+  text-transform: uppercase;
+}
+.moar-product-item__char,
+.moar-product-item__value {
+  font-family: "Arial";
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: #444444;
+}
+.buy-all {
+  background-color: rgba(104, 183, 56, 0.85);
+}
+.buy-all__text {
+  font-family: "Arial";
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.list {
+  position: absolute;
+  left: 0;
+  list-style: none;
+  padding: 0;
+}
+.list__item {
+  background-color: #ffffff;
+  width: 320px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-align: center;
+  border-top: 1px solid #e6e6e6;
+}
+.list__link {
+  text-decoration: none;
+  font-family: "Oswald";
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #000000;
+  padding-top: 12px;
+  padding-bottom: 14px;
+  display: block;
+}
+.button {
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #68B738;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.main-product-item__title {
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.main-product-item__link {
+  text-decoration: none;
+  color: #000000;
+}
+.main-product-item__feauture,
+.main-product-item__value {
+  font-family: "Arial";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin: 0;
+}
+.day__count {
+  font-family: "Oswald";
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #444444;
+}
+.day__description {
+  font-family: "Arial";
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+  color: #444444;
+}
+.weight__count {
+  font-family: "Oswald";
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #444444;
+}
+.weight__description {
+  font-family: "Arial";
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+  color: #444444;
 }
 .filter__form-name {
   font-family: "Oswald";
@@ -283,126 +443,5 @@ body {
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
-}
-.form__button {
-  border: none;
-  background-color: #68B738;
-  color: #ffffff;
-  font-family: "Oswald";
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  text-transform: uppercase;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  width: 100%;
-}
-.catalog-main {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 35px;
-  padding-top: 27px;
-}
-.catalog-main__title {
-  font-family: "Oswald";
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 400;
-  margin: 0;
-}
-.main-product-item__title {
-  font-family: "Oswald";
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-.main-product-item-link {
-  text-decoration: none;
-  color: #000000;
-}
-.main-product-item__feauture,
-.main-product-item__value {
-  font-family: "Arial";
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 400;
-  text-transform: capitalize;
-  margin: 0;
-}
-.button {
-  font-family: "Oswald";
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  color: #ffffff;
-  background-color: #68B738;
-  display: block;
-  text-align: center;
-  text-transform: uppercase;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.show-more__title {
-  font-family: "Oswald";
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  color: #111111;
-  text-transform: uppercase;
-  text-align: center;
-}
-.show-more__text {
-  font-family: "Arial";
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 400;
-  text-align: center;
-  color: #444444;
-}
-.show-more__button {
-  text-transform: uppercase;
-  font-family: "Oswald";
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  background-color: #F2F2F2;
-  display: block;
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.moar-product__title {
-  font-family: "Oswald";
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 400;
-}
-.moar-product-item__name {
-  font-family: "Oswald";
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: 400;
-  color: #222222;
-  text-transform: uppercase;
-}
-.moar-product-item__char,
-.moar-product-item__value {
-  font-family: "Arial";
-  font-size: 14px;
-  line-height: 14px;
-  font-weight: 400;
-  color: #444444;
-}
-.buy-all {
-  background-color: rgba(104, 183, 56, 0.85);
-}
-.buy-all__text {
-  font-family: "Arial";
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
