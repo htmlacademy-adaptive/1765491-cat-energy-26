@@ -3,16 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <title>Cat energy</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="page__body">
   <header class="header">
-    <a class="logo">
-      <img class="logo__image" src="../image/logomobile.svg" width="191px" height="38px" alt="логотип ссылка на главную.">
+    <a class="logo" href="index.html">
+      <img class="logo__image" src="./img/logomobile.svg" width="191px" height="38px" alt="логотип ссылка на главную.">
     </a>
     <nav class="navigation">
       <button class="navigation__toggle"><span class="visyally-hidden">Открыть меню.</span></button>
       <div class="navigation__wrapper">
-        <ul class="navigation__list list">
+        <ul class="navigation__list list visyally-hidden">
           <li class="list__item--current list__item">
             <a href="#">главная</a>
           </li>
@@ -47,15 +48,15 @@
     <div class="filter__radioform radioform">
       <div class="radioform__wrapper">
         <input type="radio" name="weightloss">
-        <label for="weightloss">похудение</label>
+        <label class="radiolabel" for="weightloss">похудение</label>
       </div>
       <div class="radioform__wrapper">
         <input type="radio" name="weightadd">
-        <label for="weightadd">набор массы</label>
+        <label class="radiolabel" for="weightadd">набор массы</label>
       </div>
       <div class="radioform__wrapper">
         <input type="radio" name="idk">
-        <label for="idk">не знаю (нужен ваш совет)</label>
+        <label class="radiolabel" for="idk">не знаю (нужен ваш совет)</label>
       </div>
     </div>
     <div class="contacts">
@@ -71,24 +72,24 @@
     </div>
     <div class="comment">
       <h2 class="comment__title">Комментарий</h2>
-      <textarea type="text" placeholder="расскажите обо всех повадках кота" name="comment" aria-label="поле ввода комментария о повадках кота"></textarea>
+      <textarea class="comment__textarea" type="text" placeholder="расскажите обо всех повадках кота" name="comment" aria-label="поле ввода комментария о повадках кота"></textarea>
     </div>
     <div class="add-form">
       <div class="add-form__wrapper">
-        <input type="checkbox" name="fakesugar">
-        <label for="fakesugar">сахарозаменитель</label>
+        <input type="checkbox" name="fakesugar" id="fakesugar">
+        <label class="add-form__label" for="fakesugar">сахарозаменитель</label>
       </div>
       <div class="add-form__wrapper">
-        <input type="checkbox" name="water">
-        <label for="fakesugar">питьевая вода</label>
+        <input type="checkbox" name="water" id="water">
+        <label class="add-form__label" for="water">питьевая вода</label>
       </div>
       <div class="add-form__wrapper">
-        <input type="checkbox" name="milk">
-        <label for="fakesugar">молоко</label>
+        <input type="checkbox" name="milk" id="milk">
+        <label class="add-form__label" for="milk">молоко</label>
       </div>
       <div class="add-form__wrapper">
-        <input type="checkbox" name="vitamins">
-        <label for="fakesugar">витамины</label>
+        <input type="checkbox" name="vitamins" id="vitamins">
+        <label class="add-form__label" for="vitamins">витамины</label>
       </div>
     </div>
     <input class="form__button button" type="submit" value="отправить заявку">
@@ -99,21 +100,21 @@
       <p class="cooperation__title">приглашаем к сотрудничеству дилеров!</p>
       <p class="cooperation__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
     </section>
-    <img class="footer__map" src="../image/map.jpg" width="320px" height="362px">
+    <img class="footer__map" src="./img/map.jpg" width="320px" height="362px">
     <a class="text-logo">
-      <img class="text-logo__image" src="../image/textlogomobile.svg" width="101px" height="18px" alt="текстовый логотип ссылка на главную">
+      <img class="text-logo__image" src="./img/textlogomobile.svg" width="101px" height="18px" alt="текстовый логотип ссылка на главную">
     </a>
     <ul class="social">
-      <li class="social__item"><a href="https://vk.com/htmlacademy"><img src="../image/vk.svg"></a></li>
-      <li class="social__item"><a href="https://www.youtube.com/user/htmlacademyru"><img src="../image/ut.svg"></a></li>
-      <li class="social__item"><a href="tg://resolve?domain=htmlacademy"><img src="../image/tg.svg"></a></li>
+      <li class="social__item"><a href="https://vk.com/htmlacademy"><img src="./img/vk.svg"></a></li>
+      <li class="social__item"><a href="https://www.youtube.com/user/htmlacademyru"><img src="./img/ut.svg"></a></li>
+      <li class="social__item"><a href="tg://resolve?domain=htmlacademy"><img src="./img/tg.svg"></a></li>
     </ul>
     <ul class="copyright">
       <li class="copyright__item">
         <p class="copyright__text">HTML Academy</p>
       </li>
       <li class="copyright__item">
-        <a href="https://htmlacademy.ru/"><img class="copyright__logo" src="../image/htmlacademy.svg" width="27px" height="34px"></a>
+        <a href="https://htmlacademy.ru/"><img class="copyright__logo" src="./img/htmlacademy.svg" width="27px" height="34px"></a>
       </li>
     </ul>
   </footer>
