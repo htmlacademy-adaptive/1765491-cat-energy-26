@@ -1,12 +1,21 @@
 .contacts__title {
   .mainfont(24px,26px);
+  @media (min-width:@tablet) {
+    .mainfont(36px,36px);
+  }
 }
 .contacts__label {
   .mainfont(16px,18px);
   color: @textgray;
   text-transform: uppercase;
+  @media (min-width:@tablet) {
+    .mainfont(20px,30px);
+  }
 }
 .contacts__email, .contacts__phone {
   .mainfont(16px,18px);
   color: @textgray;
+  @media (min-width:@tablet) {
+    .mainfont(20px,30px);
+  }
 }

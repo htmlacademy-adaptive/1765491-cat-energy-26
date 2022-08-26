@@ -10,3 +10,27 @@
   .arialfont (14px,14px);
   color: @textgray;
 }
+.moar-product-item__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 225px;
+}
+.moar-product-item {
+  @media (min-width:@tablet) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 38px;
+  padding-right: 38px;
+  }
+}
+.moar-product-item__name {
+  @media (min-width:@tablet) {
+    width: 300px;
+  }
+}
+.moar-product-item__button {
+  @media (min-width:@tablet) {
+    width: 632px;
+  }
+}

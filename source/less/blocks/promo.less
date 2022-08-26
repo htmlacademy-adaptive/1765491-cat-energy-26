@@ -3,6 +3,9 @@
   color: @white;
   padding-bottom: 20px;
   padding-top: 27px;
+  @media (min-width:@tablet) {
+    background-color: @white;
+  }
 }
 .promo__title {
   .mainfont (36px, 36px);
@@ -10,12 +13,26 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  @media (min-width:@tablet) {
+    color: @black;
+    width: 451px;
+    margin-left: 117px;
+    .mainfont(60px,60px);
+    text-align: left;
+  }
 }
 .promo__signature {
   .mainfont (14px,14px);
   text-transform: uppercase;
   text-align: center;
   margin-top: 25px;
+  @media (min-width:@tablet) {
+    display: block;
+    margin-left: 117px;
+    color: @black;
+    text-align: left;
+    .mainfont(20px,20px);
+  }
 }
 .promo__button {
   .mainfont (14px,18px);
@@ -31,4 +48,11 @@
   padding-top: 13px;
   padding-bottom: 13px;
   text-decoration: none;
+  @media (min-width:@tablet) {
+    margin-top: 49px;
+    margin-left: 117px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    .mainfont (20px,20px);
+  }
 }

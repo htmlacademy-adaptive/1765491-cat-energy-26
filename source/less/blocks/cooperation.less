@@ -6,7 +6,18 @@
 .cooperation__text {
   .arialfont(14px,20px);
   color: @textgray;
+  @media (min-width:@tablet) {
+    width: 160px;
+  }
 }
 .cooperation {
+  padding: 26px 20px;
   background-color: #F2F2F2;
+  @media (min-width:@tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.cooperation--index {
+  background-color: @white;
 }

@@ -4,15 +4,24 @@
   padding-right: 20px;
   padding-bottom: 40px;
   background-color: #EAEAEA;
+  @media (min-width:@desktop) {
+    display: grid;
+    grid-template-columns: 436px 1fr;
+    grid-template-rows: 200px 200px 200px;
+  }
 }
 .example__title {
   .mainfont(36px,40px);
+  @media (min-width:@desktop) {
+    grid-area: 1/1/2/2;
+  }
 }
 .example__text {
   .arialfont(14px,18px);
   margin: 0;
 }
-.example__price {
-  .mainfont (14px,20px);
-  text-transform: uppercase;
+.example__picture {
+  @media (min-width:@desktop) {
+    grid-area: 1/2/4/3;
+  }
 }

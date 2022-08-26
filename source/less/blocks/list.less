@@ -3,6 +3,11 @@
   left: 0;
   list-style: none;
   padding: 0;
+  @media (min-width:@tablet) {
+    position: static;
+    display: flex;
+    margin: 0;
+  }
 }
 .list__item {
   background-color: @white;
@@ -11,6 +16,13 @@
   padding-top: 10px;
   text-align: center;
   border-top: 1px solid #e6e6e6;
+  @media (min-width:@tablet) {
+    width: auto;
+    margin: 0;
+    margin-left: 34px;
+    padding: 0;
+    border: none;
+  }
 }
 .list__link {
   text-decoration: none;
@@ -20,4 +32,7 @@
   padding-top: 12px;
   padding-bottom: 14px;
   display: block;
+  @media (min-width:@tablet) {
+  .mainfont(18px,24px);
+  }
 }
