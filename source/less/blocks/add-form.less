@@ -1,4 +1,25 @@
 .add-form__label {
   .mainfont(16px,18px);
   text-transform: uppercase;
+  @media (min-width:@tablet) {
+    .mainfont(20px,30px);
+  }
+}
+.add-form__flexwrapper {
+  @media (min-width:@tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.add-form__wrapper {
+  @media (min-width:@tablet) {
+    width: 282px;
+  }
+}
+.add-form__title {
+  .mainfont(24px,26px);
+  text-transform: capitalize;
+  @media (min-width:@tablet) {
+    .mainfont(36px,36px);
+  }
 }

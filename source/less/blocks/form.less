@@ -7,9 +7,15 @@
 .form__title {
   margin: 0;
   .mainfont(36px,36px);
+  @media (min-width:@tablet) {
+    .mainfont (60px,60px);
+  }
 }
 .form__text {
   .mainfont(14px,18px);
+  @media (min-width:@tablet) {
+    .mainfont(20px,30px);
+  }
 }
 .form__button {
   border: none;
@@ -20,4 +26,18 @@
   padding-top: 7px;
   padding-bottom: 7px;
   width: 100%;
+  @media (min-width:@tablet) {
+    width: 282px;
+    .mainfont(20px,20px);
+  }
+}
+.form__comment {
+  .arialfont(14px,16px);
+  display: block;
+  text-align: center;
+}
+.form__button-wrapper {
+  @media (min-width:@tablet) {
+    display: flex;
+  }
 }
