@@ -1,21 +1,37 @@
 .results__price {
   .mainfont (14px,20px);
   text-transform: uppercase;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  @media (min-width: @tablet) {
+    margin-left: auto;
+    margin-right: 0;
+    width: 124px;
+    text-align: right;
+  }
+  @media (min-width: @desktop) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    text-align: center;
+  }
 }
 .results {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   @media (min-width:@desktop) {
 
   }
 }
 .results__weight {
-  @media (min-width:@desktop) {
+  @media (min-width:@tablet) {
     width: 162px;
   }
 }
 .results__day {
-  @media (min-width:@desktop) {
+  @media (min-width:@tablet) {
     width: 162px;
   }
 }

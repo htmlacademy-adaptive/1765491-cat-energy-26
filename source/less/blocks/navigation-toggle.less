@@ -1,11 +1,24 @@
 .navigation__toggle {
   width: 30px;
   height: 30px;
-  background-image: url(../img/burgermobile.svg);
+  background-image: url(../img/burgerclose.svg);
   background-repeat: no-repeat;
   background-position: center;
   border: none;
   background-color: transparent;
   background-size: 24px 16px;
   @media (min-width:@tablet) {display: none;}
+}
+.navigation__toggle--closed {
+  background-image: url(../img/burgermobile.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.navigation__toggle:hover {
+  background-color: #dbdbdb;
+  opacity: 0.5;
+}
+.navigation__toggle:active {
+  background-color: #dbdbdb;
+  opacity: 0.2;
 }

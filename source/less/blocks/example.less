@@ -21,6 +21,13 @@
   margin: 0;
 }
 .example__picture {
+  @media (min-width:@tablet) {
+    width: 560px;
+    height: 512px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
   @media (min-width:@desktop) {
     grid-area: 1/2/4/3;
   }

@@ -3,6 +3,7 @@
   left: 0;
   list-style: none;
   padding: 0;
+
   @media (min-width:@tablet) {
     position: static;
     display: flex;
@@ -16,6 +17,7 @@
   padding-top: 10px;
   text-align: center;
   border-top: 1px solid #e6e6e6;
+
   @media (min-width:@tablet) {
     width: auto;
     margin: 0;
@@ -24,15 +26,34 @@
     border: none;
   }
 }
+
 .list__link {
   text-decoration: none;
-  .mainfontbold(20px,20px);
+  .mainfontbold(20px, 20px);
   text-transform: uppercase;
   color: @black;
   padding-top: 12px;
   padding-bottom: 14px;
   display: block;
+
   @media (min-width:@tablet) {
-  .mainfont(18px,24px);
+    .mainfont(18px, 24px);
   }
+}
+
+.list--closed {
+  display: none;
+
+  @media (min-width:@tablet) {
+    display: flex;
+  }
+}
+
+.list--nojs {
+  position: absolute;
+  left: 0;
+  list-style: none;
+  padding: 0;
+  display: block;
+
 }
