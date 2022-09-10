@@ -7,7 +7,18 @@
 .comment__textarea::placeholder {
   .mainfont(16px,18px);
   color: @textgray;
+  text-transform: uppercase;
   @media (min-width:@tablet) {
     .mainfont(20px,30px);
+  }
+}
+.comment__textarea {
+  width: 280px;
+  border-radius: 0px;
+  border: 1px solid #E7E7E7;
+  height: 150px;
+  @media (min-width:@tablet) {
+    width: 631px;
+    height: 174px;
   }
 }
