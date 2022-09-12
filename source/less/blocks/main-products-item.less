@@ -1,12 +1,13 @@
 .main-product-item {
-  width: 280px;
   display: grid;
   grid-template-columns: 140px 140px;
   grid-template-rows: 59px 16px 16px 16px 40px;
+  border-top: 1px solid #EBEBEB;
   @media (min-width:@tablet) {
     width: 324px;
     display: flex;
     flex-direction: column;
+    border: none;
   }
 
 }
@@ -36,7 +37,22 @@
   }
 }
 .main-product-item__image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   grid-area: 1/1/5/2;
+  @media (min-width:@tablet) {
+    width: 161px;
+    height: 172px;
+    margin-top: 36px;
+  }
+}
+.main-product-item__image-big {
+@media (min-width:@tablet) {
+  width: 168px;
+  height: 206px;
+  margin-top: 2px;
+}
 }
 .main-product-item__button {
   grid-area: 5/1/6/3;
