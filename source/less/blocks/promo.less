@@ -1,10 +1,11 @@
 .promo {
-  background-color: rgba(104, 183, 56, 0.85);
   color: @white;
   padding-bottom: 20px;
   padding-top: 27px;
+  background: linear-gradient(to top, white 330px, black 330px);
   @media (min-width:@tablet) {
     background-color: @white;
+    background: none;
   }
 }
 .promo__title {
@@ -13,6 +14,7 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  display: block;
   @media (min-width:@tablet) {
     color: @black;
     width: 451px;
@@ -21,6 +23,18 @@
     text-align: left;
   }
 }
+
+// .promo__title::before {
+//   content: '';
+//   display: block;
+//   position: absolute;
+//   top:70px;
+//   width: 320px;
+//   height: 300px;
+//   background-image: url(../img/catback.jpg);
+// }
+
+
 .promo__signature {
   .mainfont (14px,14px);
   text-transform: uppercase;
@@ -60,4 +74,12 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  @media (min-width:@tablet) {
+    width: 709px;
+    height: auto;
+  }
+  @media (min-width:@desktop) {
+    width: 552px;
+    height: auto;
+  }
 }
